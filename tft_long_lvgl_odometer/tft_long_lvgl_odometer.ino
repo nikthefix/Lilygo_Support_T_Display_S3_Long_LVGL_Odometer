@@ -179,7 +179,7 @@ void setup() {
 
    lv_init();
 
-   size_t buffer_size = sizeof(lv_color_t) * screenWidth;
+   size_t buffer_size = sizeof(lv_color_t) * screenWidth * screenHeight;
 
     buf = (lv_color_t *)heap_caps_malloc(buffer_size, MALLOC_CAP_SPIRAM);
     if (buf == NULL) {
